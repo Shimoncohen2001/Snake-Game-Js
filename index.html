@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Snake</h1>
+
+    <div class="frame">
+        <div class="board"></div>
+
+        <div class="score"></div>
+
+        <dialog id="confirmDialog">
+            <div class="dialog-content">
+                <h3>!Game over</h3>
+                <div class="actions">
+                    <button id="newGame" class="btn-secondary" onclick="newGame()">New game ↻</button>
+                    <button id="cancelBtn" class="btn-danger" onclick="closeModal()">X</button>
+                    <button id="confirmBtn" class="btn-success" onclick="turnHead()">Get a chance</button>
+                </div>
+            </div>
+        </dialog>
+    </div>
+</body>
+
+</html>
